@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Ok</title>
+    {% endif %}
+</head>
+<body>
+    Hello friend!!!
+    <a href="google.com">google</a>
+
+
+
+    {% block content %} {% endblock %}
+</body>
+</html>
