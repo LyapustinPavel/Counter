@@ -20,7 +20,7 @@ def upload():
         filename=os.path.join(files_dir, secrets.token_hex(nbytes=16)+file_ext)
         if 'files' not in os.listdir(os.getcwd()):
             os.makedir(files_dir)
-        form.file.data.save(filename )
+        form.file.data.save(filename );
 
         return render_template('index.html',title = form.name.data)
     return render_template('upload.html', form=form)
